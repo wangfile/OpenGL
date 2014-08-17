@@ -33,7 +33,7 @@
 ##############################################
 #	初始设置build输出目录
 ##############################################
-ROOTDIR ?= $(SWAPIROOT)
+ROOTDIR ?= $(BUILD_DIR)/../
 SUB_OUT_DIR := $(subst $(subst /swapp/..,,$(ROOTDIR))/,,$(shell pwd))
 BUILD_OUT_PATH := $(ROOTDIR)/out/$(PLATFORM)/$(SUB_OUT_DIR)
 
